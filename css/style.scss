@@ -11,7 +11,15 @@ body {
     font-family: 'Public Sans', sans-serif;
     font-weight: 400;
     display: grid;
-    grid-template-rows: 573px auto auto auto;
+    grid-template-rows: 445px auto auto auto;
+
+    @media (min-width: 1024px) {
+        grid-template-rows: 440px auto auto auto;
+    }
+
+    @media (min-width:1220px) {
+        grid-template-rows: 540px auto auto auto;
+    }
 }
 
 ul li,
@@ -197,6 +205,7 @@ header {
 
         @media (min-width: 1024px) {
             grid-template-columns: 433px auto;
+            height: 100%;
 
             .left {
                 .left_wrapper {
@@ -208,15 +217,18 @@ header {
             .right {
                 order: 2;
                 background: url("../images/bg-intro-desktop.svg");
-                background-position: 176px -35px;
+                background-position: 120px -40px;
                 background-repeat: no-repeat;
                 background-size: cover;
+                height: 100%;
+                max-height: 440px;
 
                 img {
-                    width: 66%;
-                    top: 19px;
-                    left: 163px;
-
+                    position: relative;
+                    width: 80%;
+                    max-width: 450px;
+                    top: 9px;
+                    left: 150px;
                 }
             }
         }
@@ -224,13 +236,14 @@ header {
         @media (min-width: 1220px) {
             .right {
                 max-height: 100%;
-                background-position: 35px -66px;
+                background-position: 250px -60px;
+                background-size: cover;
 
                 img {
                     max-width: 565px;
-                    width: 72%;
+                    width: 65%;
                     top: 22px;
-                    left: 60px;
+                    left: 238px;
                 }
             }
         }
