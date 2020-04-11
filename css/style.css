@@ -235,6 +235,12 @@ header .header_wrapper .hide {
   }
 }
 
+@media (min-width: 800px) {
+  .hero .hero_wrapper .right img {
+    top: -90px;
+  }
+}
+
 @media (min-width: 1024px) {
   .hero .hero_wrapper {
     -ms-grid-columns: 433px auto;
@@ -262,13 +268,23 @@ header .header_wrapper .hide {
 @media (min-width: 1220px) {
   .hero .hero_wrapper .right {
     max-height: 100%;
-    background-position: 101px -66px;
+    background-position: 35px -66px;
   }
   .hero .hero_wrapper .right img {
     max-width: 565px;
     width: 72%;
     top: 22px;
-    left: 142px;
+    left: 60px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero .hero_wrapper .right {
+    background-position: 212px -58px;
+    background-size: 100% 100%;
+  }
+  .hero .hero_wrapper .right img {
+    left: 143px;
   }
 }
 
