@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Easy bank landing page</title>
 
     <style>
@@ -22,20 +24,24 @@
 
 <body>
     <header>
-        <img src="images/logo.svg" alt="easy bank logo image" />
-        <div class="hamburger_menu hide">
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
-                <li>Blog</li>
-                <li>Careers</li>
-            </ul>
+        <div class="header_wrapper">
+            <img src="images/logo.svg" alt="easy bank logo image" class="logo" />
+            <div class="menu_background hide">
+                <div class="hamburger_menu">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                        <li>Blog</li>
+                        <li>Careers</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hamburger_icon">
+                <img src="images/icon-hamburger.svg" alt="hamburger menu icon image">
+            </div>
+            <button type="button" class="btn hide">Request Invite</button>
         </div>
-        <div class="hamburger_icon">
-            <img src="images/icon-hamburger.svg" alt="hamburger menu icon image">
-        </div>
-        <button type="button">Request Invite</button>
     </header>
     <section class="hero">
         <div class="hero_wrapper">
