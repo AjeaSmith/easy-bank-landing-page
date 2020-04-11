@@ -10,6 +10,8 @@
 body {
     font-family: 'Public Sans', sans-serif;
     font-weight: 400;
+    display: grid;
+    grid-template-rows: 573px auto auto auto;
 }
 
 ul li,
@@ -159,16 +161,73 @@ header {
         }
 
         .right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
             background: url("../images/bg-intro-mobile.svg");
+            background-size: 100% 100%;
             background-repeat: no-repeat;
 
             img {
-                width: 100%;
-                width: 100%;
+                width: 95%;
+                max-width: 500px;
                 position: relative;
                 top: -76px;
                 z-index: 100;
             }
         }
+
+        @media (min-width: 526px) {
+            .right {
+                img {
+                    top: -123px;
+                }
+            }
+        }
+
+        @media (min-width: 1024px) {
+            grid-template-columns: 433px auto;
+
+            .left {
+                .left_wrapper {
+                    margin-top: 160px;
+
+                }
+            }
+
+            .right {
+                order: 2;
+                background: url("../images/bg-intro-desktop.svg");
+                background-position: 176px -35px;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                img {
+                    width: 66%;
+                    top: 19px;
+                    left: 163px;
+
+                }
+            }
+        }
+
+        @media (min-width: 1220px) {
+            .right {
+                max-height: 100%;
+                background-position: 101px -66px;
+
+                img {
+                    max-width: 565px;
+                    width: 72%;
+                    top: 22px;
+                    left: 142px;
+                }
+            }
+        }
     }
+}
+
+.easybank {
+    background: red;
 }
