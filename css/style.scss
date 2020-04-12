@@ -14,11 +14,11 @@ body {
     grid-template-rows: 445px auto auto auto;
 
     @media (min-width: 1024px) {
-        grid-template-rows: 440px auto auto auto;
+        grid-template-rows: 550px auto auto auto;
     }
 
     @media (min-width:1220px) {
-        grid-template-rows: 540px auto auto auto;
+        grid-template-rows: 570px auto auto auto;
     }
 }
 
@@ -217,17 +217,15 @@ header {
             .right {
                 order: 2;
                 background: url("../images/bg-intro-desktop.svg");
-                background-position: 120px -40px;
+                background-position: 120px 30px;
                 background-repeat: no-repeat;
                 background-size: cover;
                 height: 100%;
-                max-height: 440px;
-
                 img {
                     position: relative;
-                    width: 80%;
+                    width: 70%;
                     max-width: 450px;
-                    top: 9px;
+                    top: 100px;
                     left: 150px;
                 }
             }
@@ -235,14 +233,14 @@ header {
 
         @media (min-width: 1220px) {
             .right {
-                max-height: 100%;
-                background-position: 250px -60px;
+                // max-height: 100%;
+                background-position: 250px 18px;
                 background-size: cover;
 
                 img {
-                    max-width: 565px;
-                    width: 65%;
-                    top: 22px;
+                    max-width: 550px;
+                    width: 55%;
+                    top: 105px;
                     left: 238px;
                 }
             }
