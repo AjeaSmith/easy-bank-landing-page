@@ -235,6 +235,48 @@ header .header_wrapper .hide {
   width: 360px;
 }
 
+@media (min-width: 361px) {
+  .hero .hero_wrapper .right::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 550px;
+    max-height: 550px;
+    background: url("../images/bg-intro-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center -90px;
+    background-size: 100%;
+    z-index: -1;
+  }
+  .hero .hero_wrapper .right img {
+    margin: 0 0.5em;
+    -webkit-transform: translateY(-29%);
+            transform: translateY(-29%);
+    width: 95%;
+  }
+}
+
+@media (min-width: 700px) {
+  .hero .hero_wrapper .right img {
+    margin: 0 2em;
+    width: 88%;
+  }
+  .hero .hero_wrapper .right::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 500px;
+    max-height: 500px;
+    background: url("../images/bg-intro-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center -7px;
+    background-size: 100% 100%;
+    z-index: -1;
+  }
+}
+
 @media (min-width: 768px) {
   .hero .hero_wrapper .right::before {
     content: "";
@@ -250,7 +292,7 @@ header .header_wrapper .hide {
     z-index: -1;
   }
   .hero .hero_wrapper .right img {
-    margin: 0 1.5em;
+    margin: 0 2.5em;
     -webkit-transform: translateY(-29%);
             transform: translateY(-29%);
     width: 88%;
