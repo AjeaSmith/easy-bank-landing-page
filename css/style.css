@@ -710,8 +710,8 @@ footer {
   background: #2d314d;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (auto)[3];
-      grid-template-rows: repeat(3, auto);
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
   padding: 37px 68px;
   row-gap: 30px;
 }
@@ -777,6 +777,11 @@ footer .middle_menu ul {
 
 footer .middle_menu ul li {
   margin-bottom: 18px;
+  font-weight: 300;
+}
+
+footer .middle_menu ul:nth-of-type(2) li:nth-of-type(3) {
+  margin-bottom: 0;
 }
 
 footer .end_menu {
@@ -798,4 +803,48 @@ footer .end_menu p {
   font-size: 0.8em;
   margin-top: 25px;
   margin-bottom: 1em;
+}
+
+@media (min-width: 1024px) {
+  footer {
+    -ms-grid-columns: auto 420px auto;
+        grid-template-columns: auto 420px auto;
+    -ms-grid-rows: none;
+        grid-template-rows: none;
+    padding: 37px 41px;
+  }
+  footer .top_menu {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  footer .top_menu svg {
+    margin-bottom: 48px;
+  }
+  footer .middle_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  footer .middle_menu ul {
+    width: 30%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  footer .middle_menu ul li {
+    margin-bottom: 0;
+    line-height: 1.8em;
+  }
+}
+
+@media (min-width: 1440px) {
+  footer {
+    padding: 48px 164px;
+  }
 }
