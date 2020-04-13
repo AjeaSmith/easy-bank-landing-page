@@ -228,7 +228,7 @@ header .header_wrapper button {
 
 @media (min-width: 1440px) {
   header .header_wrapper {
-    padding: 32px 163px;
+    padding: 28px 164px;
   }
   header .header_wrapper img {
     width: 144px;
@@ -503,6 +503,15 @@ header .header_wrapper button {
   }
 }
 
+@media (min-width: 1440px) {
+  .hero .hero_wrapper .left .left_wrapper {
+    padding: 171px 0 171px 164px;
+  }
+  .hero .hero_wrapper .left .left_wrapper p {
+    width: 442px;
+  }
+}
+
 .easybank {
   background: #f3f4f6;
 }
@@ -566,5 +575,80 @@ header .header_wrapper button {
   .easybank .easybank_wrapper .easybank_options {
     -ms-grid-columns: (auto)[4];
         grid-template-columns: repeat(4, auto);
+    -webkit-column-gap: 47px;
+            column-gap: 47px;
   }
+  .easybank .easybank_wrapper .easybank_options .option p {
+    font-size: 0.8em;
+  }
+  .easybank .easybank_wrapper .easybank_options .option h2 {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1220px) {
+  .easybank .easybank_wrapper .easybank_options .option p {
+    font-size: 0.85em;
+  }
+  .easybank .easybank_wrapper .easybank_options .option h2 {
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 1440px) {
+  .easybank .easybank_wrapper {
+    padding: 110px 164px;
+  }
+}
+
+.articles {
+  background: #fafafa;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[2];
+      grid-template-rows: repeat(2, auto);
+  padding: 84px 21px;
+  row-gap: 33px;
+}
+
+.articles h1 {
+  text-align: center;
+  font-weight: 300;
+}
+
+.articles .article_wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[4];
+      grid-template-rows: repeat(4, auto);
+  row-gap: 21px;
+}
+
+.articles .article_wrapper img {
+  width: 100%;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+.articles .article_wrapper .article {
+  border-radius: 6px;
+  border: 1px solid white;
+  background: white;
+}
+
+.articles .article_wrapper .article .content {
+  padding: 28px 27px;
+}
+
+.articles .article_wrapper .article .content h3 {
+  font-weight: 300;
+  font-size: 0.87em;
+  margin: 12px 0;
+}
+
+.articles .article_wrapper .article .content small,
+.articles .article_wrapper .article .content p {
+  font-size: 0.8em;
+  font-weight: 300;
+  color: #9698a6;
 }
