@@ -17,8 +17,8 @@ body {
   font-size: 18px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto auto auto auto auto;
-      grid-template-rows: auto auto auto auto auto;
+  -ms-grid-rows: (auto)[5];
+      grid-template-rows: repeat(5, auto);
 }
 
 @media (min-width: 1024px) {
@@ -250,6 +250,7 @@ header .header_wrapper button {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
+  padding-bottom: 3em;
 }
 
 .hero .hero_wrapper .left .left_wrapper {
@@ -280,6 +281,7 @@ header .header_wrapper button {
 .hero .hero_wrapper .left .left_wrapper p {
   color: #9698a6;
   font-weight: 300;
+  line-height: 1.8em;
 }
 
 .hero .hero_wrapper .left .left_wrapper button {
@@ -346,10 +348,10 @@ header .header_wrapper button {
 
 @media (min-width: 700px) {
   .hero .hero_wrapper .left .left_wrapper h1 {
-    font-size: 3.5em;
+    font-size: 2.6em;
   }
   .hero .hero_wrapper .left .left_wrapper p {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
   .hero .hero_wrapper .left .left_wrapper button {
     width: 250px;
@@ -439,15 +441,15 @@ header .header_wrapper button {
     max-height: 1034px;
     background: url("../images/bg-intro-desktop.svg");
     background-repeat: no-repeat;
-    background-position: 40px -145px;
+    background-position: 10px -145px;
     background-size: cover;
     z-index: -1;
   }
   .hero .hero_wrapper .right img {
     position: absolute;
-    -webkit-transform: translate(110px, -80px);
-            transform: translate(110px, -80px);
-    width: 80%;
+    -webkit-transform: translate(110px, -68px);
+            transform: translate(110px, -68px);
+    width: 88%;
     max-width: 695px;
   }
 }
@@ -503,4 +505,66 @@ header .header_wrapper button {
 
 .easybank {
   background: #f3f4f6;
+}
+
+.easybank .easybank_wrapper {
+  text-align: center;
+  padding: 64px 23px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[2];
+      grid-template-rows: repeat(2, auto);
+  row-gap: 52px;
+  color: #9698a6;
+}
+
+.easybank .easybank_wrapper h2 {
+  margin-bottom: 21px;
+  color: #2d314d;
+  font-weight: 300;
+}
+
+.easybank .easybank_wrapper p {
+  font-weight: 300;
+  line-height: 1.8em;
+}
+
+.easybank .easybank_wrapper .easybank_text h2 {
+  font-size: 2.5em;
+}
+
+.easybank .easybank_wrapper .easybank_options {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[4];
+      grid-template-rows: repeat(4, auto);
+  row-gap: 32px;
+}
+
+.easybank .easybank_wrapper .easybank_options img {
+  margin-bottom: 26px;
+}
+
+@media (min-width: 768px) {
+  .easybank .easybank_wrapper {
+    padding: 64px 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .easybank .easybank_wrapper {
+    text-align: left;
+    padding: 108px 41px;
+    row-gap: 74px;
+  }
+  .easybank .easybank_wrapper .easybank_text h2 {
+    font-size: 2em;
+  }
+  .easybank .easybank_wrapper .easybank_text p {
+    width: 624px;
+  }
+  .easybank .easybank_wrapper .easybank_options {
+    -ms-grid-columns: (auto)[4];
+        grid-template-columns: repeat(4, auto);
+  }
 }

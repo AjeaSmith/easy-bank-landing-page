@@ -24,7 +24,7 @@ body {
     font-family: 'Public Sans', sans-serif;
     font-size: 18px;
     display: grid;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: repeat(5, auto);
 
     @media (min-width: 1024px) {
         grid-template-rows: auto 387px auto auto auto;
@@ -198,6 +198,7 @@ header {
 
         .left {
             order: 2;
+            padding-bottom: 3em;
 
             .left_wrapper {
                 padding: 0 10px;
@@ -219,6 +220,7 @@ header {
                 p {
                     color: $GrayB;
                     font-weight: 300;
+                    line-height: 1.8em;
                 }
 
                 button {
@@ -289,11 +291,11 @@ header {
             .left {
                 .left_wrapper {
                     h1 {
-                        font-size: 3.5em;
+                        font-size: 2.6em;
                     }
 
                     p {
-                        font-size: 1.2em;
+                        font-size: 1.1em;
                     }
 
                     button {
@@ -392,15 +394,15 @@ header {
                     max-height: 1034px;
                     background: url("../images/bg-intro-desktop.svg");
                     background-repeat: no-repeat;
-                    background-position: 40px -145px;
+                    background-position: 10px -145px;
                     background-size: cover;
                     z-index: -1;
                 }
 
                 img {
                     position: absolute;
-                    transform: translate(110px, -80px);
-                    width: 80%;
+                    transform: translate(110px, -68px);
+                    width: 88%;
                     max-width: 695px;
                 }
             }
@@ -464,4 +466,68 @@ header {
 
 .easybank {
     background: $LGB;
+
+    .easybank_wrapper {
+        text-align: center;
+        padding: 64px 23px;
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        row-gap: 52px;
+        color: $GrayB;
+
+        h2 {
+            margin-bottom: 21px;
+            color: $DarkB;
+            font-weight: 300;
+        }
+
+        p {
+            font-weight: 300;
+            line-height: 1.8em;
+        }
+
+        .easybank_text {
+            h2 {
+                font-size: 2.5em;
+            }
+        }
+
+        .easybank_options {
+            display: grid;
+            grid-template-rows: repeat(4, auto);
+            row-gap: 32px;
+
+            img {
+                margin-bottom: 26px;
+            }
+        }
+    }
+
+    @media (min-width:768px) {
+        .easybank_wrapper {
+            padding: 64px 100px;
+        }
+    }
+
+    @media (min-width:1024px) {
+        .easybank_wrapper {
+            text-align: left;
+            padding: 108px 41px;
+            row-gap: 74px;
+
+            .easybank_text {
+                h2 {
+                    font-size: 2em;
+                }
+
+                p {
+                    width: 624px;
+                }
+            }
+
+            .easybank_options {
+                grid-template-columns: repeat(4, auto);
+            }
+        }
+    }
 }
