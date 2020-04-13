@@ -31,7 +31,7 @@ body {
     }
 
     @media (min-width:1220px) {
-        // grid-template-rows: 570px auto auto auto;
+        grid-template-rows: auto 440px auto auto auto;
     }
 }
 
@@ -175,7 +175,11 @@ header {
             }
         }
 
-        @media (min-width: 1220px) {
+        @media (min-width:1024px) {
+            padding: 19px 50px;
+        }
+
+        @media (min-width: 1440px) {
             padding: 32px 163px;
 
             img {
@@ -351,21 +355,26 @@ header {
 
             .left {
                 .left_wrapper {
-                    padding: 0 23px;
+                    margin-top: 60px;
+                    padding: 0px 41px;
                     align-items: flex-start;
 
                     h1 {
-                        font-size: 1.5em;
+                        font-size: 2.5em;
+                        text-align: left;
+                        font-weight: 300;
                     }
 
                     p {
+                        line-height: 1.5em;
                         font-size: 1em;
                         text-align: left;
+                        width: 423px;
                     }
 
                     button {
-                        width: 250px;
-                        height: 55px;
+                        width: 166px;
+                        height: 44px;
                         font-size: 0.8em;
                     }
                 }
@@ -383,43 +392,69 @@ header {
                     max-height: 1034px;
                     background: url("../images/bg-intro-desktop.svg");
                     background-repeat: no-repeat;
-                    background-position: -16px -149px;
+                    background-position: 40px -145px;
                     background-size: cover;
                     z-index: -1;
                 }
 
                 img {
                     position: absolute;
-                    transform: translate(90px, -80px);
-                    width: 95%;
+                    transform: translate(110px, -80px);
+                    width: 80%;
                     max-width: 695px;
                 }
             }
         }
 
         @media (min-width: 1220px) {
+            .left {
+                .left_wrapper {
+                    margin-top: 60px;
+                    padding: 0px 41px;
+                    align-items: flex-start;
+
+                    h1 {
+                        font-size: 2.5em;
+                        text-align: left;
+                        font-weight: 300;
+                    }
+
+                    p {
+                        line-height: 1.5em;
+                        font-size: 1em;
+                        text-align: left;
+                        width: 423px;
+                    }
+
+                    button {
+                        width: 166px;
+                        height: 44px;
+                        font-size: 0.8em;
+                    }
+                }
+            }
+
             .right {
                 width: 100%;
-                overflow: hidden;
 
                 &::before {
                     content: "";
                     position: absolute;
                     display: block;
                     width: 100%;
-                    height: 795px;
-                    max-height: 1034px;
+                    height: 635px;
+                    max-height: 635px;
                     background: url("../images/bg-intro-desktop.svg");
                     background-repeat: no-repeat;
-                    background-position: 570px -195px;
-                    // background-size: 100% 100%;
-                    background-size: contain;
+                    background-position: 100px -145px;
+                    background-size: 100% 100%;
                     z-index: -1;
                 }
 
                 img {
-                    transform: translate(409px, -109px);
-                    width: 70%;
+                    position: absolute;
+                    transform: translate(140px, -84px);
+                    width: 85%;
                     max-width: 695px;
                 }
             }
@@ -428,5 +463,5 @@ header {
 }
 
 .easybank {
-    background: red;
+    background: $LGB;
 }

@@ -28,6 +28,13 @@ body {
   }
 }
 
+@media (min-width: 1220px) {
+  body {
+    -ms-grid-rows: auto 440px auto auto auto;
+        grid-template-rows: auto 440px auto auto auto;
+  }
+}
+
 ul li,
 button {
   cursor: pointer;
@@ -213,7 +220,13 @@ header .header_wrapper button {
   }
 }
 
-@media (min-width: 1220px) {
+@media (min-width: 1024px) {
+  header .header_wrapper {
+    padding: 19px 50px;
+  }
+}
+
+@media (min-width: 1440px) {
   header .header_wrapper {
     padding: 32px 163px;
   }
@@ -390,21 +403,26 @@ header .header_wrapper button {
     height: 100%;
   }
   .hero .hero_wrapper .left .left_wrapper {
-    padding: 0 23px;
+    margin-top: 60px;
+    padding: 0px 41px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
   }
   .hero .hero_wrapper .left .left_wrapper h1 {
-    font-size: 1.5em;
+    font-size: 2.5em;
+    text-align: left;
+    font-weight: 300;
   }
   .hero .hero_wrapper .left .left_wrapper p {
+    line-height: 1.5em;
     font-size: 1em;
     text-align: left;
+    width: 423px;
   }
   .hero .hero_wrapper .left .left_wrapper button {
-    width: 250px;
-    height: 55px;
+    width: 166px;
+    height: 44px;
     font-size: 0.8em;
   }
   .hero .hero_wrapper .right {
@@ -421,45 +439,68 @@ header .header_wrapper button {
     max-height: 1034px;
     background: url("../images/bg-intro-desktop.svg");
     background-repeat: no-repeat;
-    background-position: -16px -149px;
+    background-position: 40px -145px;
     background-size: cover;
     z-index: -1;
   }
   .hero .hero_wrapper .right img {
     position: absolute;
-    -webkit-transform: translate(90px, -80px);
-            transform: translate(90px, -80px);
-    width: 95%;
+    -webkit-transform: translate(110px, -80px);
+            transform: translate(110px, -80px);
+    width: 80%;
     max-width: 695px;
   }
 }
 
 @media (min-width: 1220px) {
+  .hero .hero_wrapper .left .left_wrapper {
+    margin-top: 60px;
+    padding: 0px 41px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .hero .hero_wrapper .left .left_wrapper h1 {
+    font-size: 2.5em;
+    text-align: left;
+    font-weight: 300;
+  }
+  .hero .hero_wrapper .left .left_wrapper p {
+    line-height: 1.5em;
+    font-size: 1em;
+    text-align: left;
+    width: 423px;
+  }
+  .hero .hero_wrapper .left .left_wrapper button {
+    width: 166px;
+    height: 44px;
+    font-size: 0.8em;
+  }
   .hero .hero_wrapper .right {
     width: 100%;
-    overflow: hidden;
   }
   .hero .hero_wrapper .right::before {
     content: "";
     position: absolute;
     display: block;
     width: 100%;
-    height: 795px;
-    max-height: 1034px;
+    height: 635px;
+    max-height: 635px;
     background: url("../images/bg-intro-desktop.svg");
     background-repeat: no-repeat;
-    background-position: 570px -195px;
-    background-size: contain;
+    background-position: 100px -145px;
+    background-size: 100% 100%;
     z-index: -1;
   }
   .hero .hero_wrapper .right img {
-    -webkit-transform: translate(409px, -109px);
-            transform: translate(409px, -109px);
-    width: 70%;
+    position: absolute;
+    -webkit-transform: translate(140px, -84px);
+            transform: translate(140px, -84px);
+    width: 85%;
     max-width: 695px;
   }
 }
 
 .easybank {
-  background: red;
+  background: #f3f4f6;
 }
