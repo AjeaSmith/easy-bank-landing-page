@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Public Sans', sans-serif;
-  font-weight: 400;
+  font-size: 18px;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: auto auto auto auto auto;
@@ -18,6 +18,17 @@ body {
 ul li,
 button {
   cursor: pointer;
+}
+
+.gradient_btn {
+  width: 166px;
+  height: 46px;
+  border: none;
+  border-radius: 33px;
+  text-align: center;
+  color: white;
+  background: -webkit-gradient(linear, right top, left top, from(#2bb7da), to(#31d35c));
+  background: linear-gradient(to left, #2bb7da, #31d35c);
 }
 
 .articles .article_wrapper img {
@@ -46,9 +57,19 @@ header .header_wrapper .logo img {
 
 header .header_wrapper .menu_background {
   position: absolute;
+  top: 0;
+  left: 0;
   height: 100vh;
   width: 100%;
   background: rgba(0, 0, 0, 0.4);
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header .header_wrapper .menu_background .hamburger_menu {
@@ -58,7 +79,8 @@ header .header_wrapper .menu_background .hamburger_menu {
   height: 39%;
   top: 80px;
   background: white;
-  left: 37px;
+  left: 5%;
+  right: 5%;
   border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,6 +95,7 @@ header .header_wrapper .menu_background .hamburger_menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 auto;
 }
 
 header .header_wrapper .menu_background .hamburger_menu ul {
@@ -98,7 +121,7 @@ header .header_wrapper .hamburger_icon {
   justify-self: flex-end;
 }
 
-header .header_wrapper .hide {
+header .header_wrapper button {
   display: none;
 }
 
@@ -168,20 +191,12 @@ header .header_wrapper .hide {
   header .header_wrapper .menu_background .hamburger_menu ul li {
     margin-right: 30px;
   }
-  header .header_wrapper button.btn {
+  header .header_wrapper button {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
     grid-area: CTA;
     display: block;
-    width: 166px;
-    height: 46px;
     justify-self: flex-end;
-    border: none;
-    border-radius: 33px;
-    text-align: center;
-    color: white;
-    background: -webkit-gradient(linear, right top, left top, from(#2bb7da), to(#31d35c));
-    background: linear-gradient(to left, #2bb7da, #31d35c);
   }
 }
 
@@ -199,13 +214,27 @@ header .header_wrapper .hide {
   display: grid;
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
-  row-gap: 1em;
 }
 
 .hero .hero_wrapper .left {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
+}
+
+.hero .hero_wrapper .left .left_wrapper {
+  padding: 0 10px;
+}
+
+.hero .hero_wrapper .left .left_wrapper h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 0.3em;
+}
+
+.hero .hero_wrapper .left .left_wrapper h1,
+.hero .hero_wrapper .left .left_wrapper p {
+  text-align: center;
 }
 
 .hero .hero_wrapper .right {
@@ -225,7 +254,7 @@ header .header_wrapper .hide {
   position: absolute;
   display: block;
   width: 100%;
-  height: 500px;
+  height: 424px;
   max-height: 500px;
   background: url("../images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
@@ -240,7 +269,7 @@ header .header_wrapper .hide {
   width: 360px;
 }
 
-@media (min-width: 361px) {
+@media (min-width: 380px) {
   .hero .hero_wrapper .right::before {
     content: "";
     position: absolute;

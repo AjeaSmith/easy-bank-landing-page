@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Public+Sans:300,400&display=swap');
 
+$DarkB: hsl(233, 26%, 24%);
+$LimeG: hsl(136, 65%, 51%);
+$BrightCy: hsl(192, 70%, 51%);
+$GrayB: hsl(233, 8%, 62%);
+$LGB: hsl(220, 16%, 96%);
+$LightGray: hsl(0, 0%, 98%);
+$White: hsl(0, 0%, 100%);
 
 * {
     margin: 0;
@@ -9,7 +16,7 @@
 
 body {
     font-family: 'Public Sans', sans-serif;
-    font-weight: 400;
+    font-size: 18px;
     display: grid;
     grid-template-rows: auto auto auto auto auto;
 
@@ -27,14 +34,22 @@ button {
     cursor: pointer;
 }
 
+.gradient_btn {
+    width: 166px;
+    height: 46px;
+    border: none;
+    border-radius: 33px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to left, $BrightCy, $LimeG);
+}
+
 .articles .article_wrapper img {
     width: 80%;
 }
 
 header {
-    // position: fixed;
     position: relative;
-    // width: 100%;
     z-index: 1000;
     background: white;
 
@@ -50,9 +65,14 @@ header {
 
         .menu_background {
             position: absolute;
+            top: 0;
+            left: 0;
             height: 100vh;
             width: 100%;
             background: rgba($color: #000000, $alpha: 0.4);
+            display: none;
+            flex-direction: column;
+            justify-content: center;
 
             .hamburger_menu {
                 position: absolute;
@@ -61,12 +81,14 @@ header {
                 height: 39%;
                 top: 80px;
                 background: white;
-                left: 37px;
+                left: 5%;
+                right: 5%;
                 border-radius: 5px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                margin: 0 auto;
 
                 ul {
                     list-style: none;
@@ -85,7 +107,7 @@ header {
             justify-self: flex-end;
         }
 
-        .hide {
+        button {
             display: none;
         }
 
@@ -140,17 +162,10 @@ header {
 
             }
 
-            button.btn {
+            button {
                 grid-area: CTA;
                 display: block;
-                width: 166px;
-                height: 46px;
                 justify-self: flex-end;
-                border: none;
-                border-radius: 33px;
-                text-align: center;
-                color: white;
-                background: linear-gradient(to left, hsl(192, 70%, 51%), hsl(136, 65%, 51%));
             }
         }
 
@@ -168,10 +183,24 @@ header {
     .hero_wrapper {
         display: grid;
         grid-template-rows: auto auto;
-        row-gap: 1em;
 
         .left {
             order: 2;
+
+            .left_wrapper {
+                padding: 0 10px;
+
+                h1 {
+                    font-size: 2.5rem;
+                    font-weight: 300;
+                    margin-bottom: 0.3em;
+                }
+
+                h1,
+                p {
+                    text-align: center;
+                }
+            }
         }
 
         .right {
@@ -180,26 +209,13 @@ header {
             z-index: 100;
             display: flex;
             justify-content: center;
-            // flex-direction: column;
-            // align-items: center;
-            // width: 100%;
-            // background: url("../images/bg-intro-mobile.svg");
-            // background-size: 100% 100%;
-            // background-repeat: no-repeat;
 
-            // img {
-            //     width: 95%;
-            //     max-width: 500px;
-            //     position: relative;
-            //     top: -76px;
-            //     z-index: 100;
-            // }
             &::before {
                 content: "";
                 position: absolute;
                 display: block;
                 width: 100%;
-                height: 500px;
+                height: 424px;
                 max-height: 500px;
                 background: url("../images/bg-intro-mobile.svg");
                 background-repeat: no-repeat;
@@ -214,7 +230,8 @@ header {
             }
         }
 
-        @media (min-width: 361px) {
+        // Media Queries
+        @media (min-width: 380px) {
             .right {
                 &::before {
                     content: "";
