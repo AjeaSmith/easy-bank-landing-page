@@ -27,11 +27,11 @@ body {
     grid-template-rows: repeat(5, auto);
 
     @media (min-width: 1024px) {
-        grid-template-rows: auto 387px auto auto auto;
+        grid-template-rows: auto 387px 650px auto auto;
     }
 
     @media (min-width:1220px) {
-        grid-template-rows: auto 440px auto auto auto;
+        grid-template-rows: auto 440px 650px auto auto;
     }
 }
 
@@ -540,7 +540,7 @@ header {
 
             .easybank_options {
                 grid-template-columns: repeat(4, auto);
-                column-gap: 47px;
+                column-gap: 30px;
 
                 .option p {
                     font-size: 0.8em;
@@ -570,6 +570,10 @@ header {
     @media (min-width:1440px) {
         .easybank_wrapper {
             padding: 110px 164px;
+
+            .easybank_options {
+                column-gap: 25px;
+            }
         }
     }
 }
@@ -590,6 +594,7 @@ header {
         display: grid;
         grid-template-rows: repeat(4, auto);
         row-gap: 21px;
+        justify-self: center;
 
         img {
             width: 100%;
@@ -601,6 +606,16 @@ header {
             border-radius: 6px;
             border: 1px solid white;
             background: $White;
+            width: 100%;
+            height: 100%;
+            max-width: 373px;
+            max-height: 455px;
+
+            img {
+                width: 100%;
+                height: 234px;
+                max-height: 455px;
+            }
 
             .content {
                 padding: 28px 27px;
@@ -618,6 +633,38 @@ header {
                     color: $GrayB;
                 }
             }
+        }
+    }
+
+    @media (min-width: 768px) {
+        h1 {
+            font-size: 2em;
+        }
+
+        .article_wrapper {
+            grid-template-rows: repeat(2, auto);
+            grid-template-columns: repeat(2, auto);
+            column-gap: 1em;
+        }
+    }
+
+    @media (min-width: 1220px) {
+        padding: 93px 41px;
+
+        h1 {
+            text-align: left;
+        }
+
+        .article_wrapper {
+            grid-template-columns: repeat(4, auto);
+        }
+    }
+
+    @media (min-width: 1440px) {
+        padding: 93px 164px;
+
+        .article_wrapper {
+            column-gap: 26px;
         }
     }
 }

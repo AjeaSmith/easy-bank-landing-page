@@ -23,15 +23,15 @@ body {
 
 @media (min-width: 1024px) {
   body {
-    -ms-grid-rows: auto 387px auto auto auto;
-        grid-template-rows: auto 387px auto auto auto;
+    -ms-grid-rows: auto 387px 650px auto auto;
+        grid-template-rows: auto 387px 650px auto auto;
   }
 }
 
 @media (min-width: 1220px) {
   body {
-    -ms-grid-rows: auto 440px auto auto auto;
-        grid-template-rows: auto 440px auto auto auto;
+    -ms-grid-rows: auto 440px 650px auto auto;
+        grid-template-rows: auto 440px 650px auto auto;
   }
 }
 
@@ -575,8 +575,8 @@ header .header_wrapper button {
   .easybank .easybank_wrapper .easybank_options {
     -ms-grid-columns: (auto)[4];
         grid-template-columns: repeat(4, auto);
-    -webkit-column-gap: 47px;
-            column-gap: 47px;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
   }
   .easybank .easybank_wrapper .easybank_options .option p {
     font-size: 0.8em;
@@ -598,6 +598,10 @@ header .header_wrapper button {
 @media (min-width: 1440px) {
   .easybank .easybank_wrapper {
     padding: 110px 164px;
+  }
+  .easybank .easybank_wrapper .easybank_options {
+    -webkit-column-gap: 25px;
+            column-gap: 25px;
   }
 }
 
@@ -622,6 +626,8 @@ header .header_wrapper button {
   -ms-grid-rows: (auto)[4];
       grid-template-rows: repeat(4, auto);
   row-gap: 21px;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .articles .article_wrapper img {
@@ -634,6 +640,16 @@ header .header_wrapper button {
   border-radius: 6px;
   border: 1px solid white;
   background: white;
+  width: 100%;
+  height: 100%;
+  max-width: 373px;
+  max-height: 455px;
+}
+
+.articles .article_wrapper .article img {
+  width: 100%;
+  height: 234px;
+  max-height: 455px;
 }
 
 .articles .article_wrapper .article .content {
@@ -651,4 +667,41 @@ header .header_wrapper button {
   font-size: 0.8em;
   font-weight: 300;
   color: #9698a6;
+}
+
+@media (min-width: 768px) {
+  .articles h1 {
+    font-size: 2em;
+  }
+  .articles .article_wrapper {
+    -ms-grid-rows: (auto)[2];
+        grid-template-rows: repeat(2, auto);
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    -webkit-column-gap: 1em;
+            column-gap: 1em;
+  }
+}
+
+@media (min-width: 1220px) {
+  .articles {
+    padding: 93px 41px;
+  }
+  .articles h1 {
+    text-align: left;
+  }
+  .articles .article_wrapper {
+    -ms-grid-columns: (auto)[4];
+        grid-template-columns: repeat(4, auto);
+  }
+}
+
+@media (min-width: 1440px) {
+  .articles {
+    padding: 93px 164px;
+  }
+  .articles .article_wrapper {
+    -webkit-column-gap: 26px;
+            column-gap: 26px;
+  }
 }
