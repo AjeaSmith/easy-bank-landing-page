@@ -222,6 +222,10 @@ header .header_wrapper button {
   }
 }
 
+.hero {
+  background: #fafafa;
+}
+
 .hero .hero_wrapper {
   display: -ms-grid;
   display: grid;
@@ -271,7 +275,6 @@ header .header_wrapper button {
 
 .hero .hero_wrapper .right {
   position: relative;
-  background: white;
   z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -386,11 +389,18 @@ header .header_wrapper button {
         grid-template-columns: 1fr 1fr;
     height: 100%;
   }
+  .hero .hero_wrapper .left .left_wrapper {
+    padding: 0 23px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
   .hero .hero_wrapper .left .left_wrapper h1 {
     font-size: 1.5em;
   }
   .hero .hero_wrapper .left .left_wrapper p {
     font-size: 1em;
+    text-align: left;
   }
   .hero .hero_wrapper .left .left_wrapper button {
     width: 250px;

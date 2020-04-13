@@ -186,6 +186,8 @@ header {
 }
 
 .hero {
+    background: $LightGray;
+
     .hero_wrapper {
         display: grid;
         grid-template-rows: auto auto;
@@ -223,7 +225,6 @@ header {
 
         .right {
             position: relative;
-            background: white;
             z-index: 100;
             display: flex;
             justify-content: center;
@@ -350,12 +351,16 @@ header {
 
             .left {
                 .left_wrapper {
+                    padding: 0 23px;
+                    align-items: flex-start;
+
                     h1 {
                         font-size: 1.5em;
                     }
 
                     p {
                         font-size: 1em;
+                        text-align: left;
                     }
 
                     button {
