@@ -76,7 +76,7 @@ header {
             height: 100vh;
             width: 100%;
             background: rgba($color: #000000, $alpha: 0.4);
-            display: none;
+            display: flex;
             flex-direction: column;
             justify-content: center;
 
@@ -108,8 +108,11 @@ header {
 
         }
 
+        .hide {
+            display: none;
+        }
+
         .hamburger_icon {
-            cursor: pointer;
             grid-area: menu;
             justify-self: flex-end;
         }
@@ -188,6 +191,14 @@ header {
             }
         }
     }
+
+    .hide {
+        display: none;
+    }
+}
+
+.hide {
+    display: none;
 }
 
 .hero {
@@ -669,6 +680,7 @@ header {
         }
     }
 }
+
 footer {
     background: $DarkB;
     display: grid;
@@ -774,6 +786,7 @@ footer {
             }
         }
     }
+
     @media (min-width:1440px) {
         padding: 48px 164px;
     }

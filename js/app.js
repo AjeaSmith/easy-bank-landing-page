@@ -1,18 +1,17 @@
 // Selectors 
-const menuBtn = document.querySelector(".icon");
+const icon = document.querySelector(".icon");
 const menu = document.querySelector(".menu");
+
 // Events
-menuBtn.addEventListener("click", openMenu);
+icon.addEventListener("click", openMenu);
 menu.addEventListener("click", closeMenu);
+
 // Functions
 function openMenu() {
-    menu.style.display = "flex";
-
-    if (menu.style.display = "flex") {
-        menuBtn.src = "images/icon-close.svg";
-    }
+    menu.classList.remove("hide");
+    icon.src = "images/icon-close.svg";
 }
 function closeMenu() {
-    menu.style.display = "none";
-    menuBtn.src = "images/icon-hamburger.svg";
+    menu.classList.add("hide");
+    icon.src = "images/icon-hamburger.svg";
 }

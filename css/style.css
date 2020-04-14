@@ -82,7 +82,9 @@ header .header_wrapper .menu_background {
   height: 100vh;
   width: 100%;
   background: rgba(0, 0, 0, 0.4);
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -134,8 +136,11 @@ header .header_wrapper .menu_background .hamburger_menu ul {
           justify-content: space-evenly;
 }
 
+header .header_wrapper .hide {
+  display: none;
+}
+
 header .header_wrapper .hamburger_icon {
-  cursor: pointer;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: menu;
@@ -234,6 +239,14 @@ header .header_wrapper button {
   header .header_wrapper img {
     width: 144px;
   }
+}
+
+header .hide {
+  display: none;
+}
+
+.hide {
+  display: none;
 }
 
 .hero {
