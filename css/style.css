@@ -532,7 +532,7 @@ header .hide {
 
 @media (min-width: 1440px) {
   .hero .hero_wrapper .left .left_wrapper {
-    padding: 171px 0 171px 164px;
+    padding-left: 164px;
   }
   .hero .hero_wrapper .left .left_wrapper p {
     width: 442px;

@@ -492,7 +492,7 @@ header {
         @media (min-width: 1440px) {
             .left {
                 .left_wrapper {
-                    padding: 171px 0 171px 164px;
+                    padding-left: 164px;
 
                     p {
                         width: 442px;
@@ -737,7 +737,7 @@ footer {
                     color: $White;
 
                     &:hover {
-                        color:$LimeG;
+                        color: $LimeG;
                     }
                 }
             }
