@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Public+Sans:300,400&display=swap');
 
 $DarkB: #2d314d;
-$LimeG: #30d35c;
-$BrightCy: #2ab6d9;
+$LimeG: rgb(48, 211, 92);
+$BrightCy: rgb(42, 182, 217);
 $GrayB: #9698a5;
 $LGB: #f3f4f6;
 $LightGray: #f9f9f9;
@@ -52,6 +52,10 @@ button {
     text-align: center;
     color: white;
     background: linear-gradient(to left, $BrightCy, $LimeG);
+
+    &:hover {
+        opacity: 0.6;
+    }
 }
 
 .articles .article_wrapper img {
@@ -782,8 +786,6 @@ footer {
         }
     }
 
-    @media (min-width:768px) {}
-
     @media (min-width:1024px) {
         grid-template-columns: auto 420px auto;
         grid-template-rows: none;
@@ -810,6 +812,14 @@ footer {
             ul li {
                 margin-bottom: 0;
                 line-height: 1.8em;
+            }
+        }
+
+        .end_menu {
+            button {
+                &:hover {
+                    opacity: 0.9;
+                }
             }
         }
     }
