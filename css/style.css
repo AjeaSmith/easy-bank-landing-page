@@ -55,6 +55,10 @@ button {
   background: linear-gradient(to left, rgba(48, 211, 92, 0.5), rgba(42, 182, 217, 0.5));
 }
 
+.gradient_btn:hover {
+  opacity: 0.6;
+}
+
 .articles .article_wrapper img {
   width: 80%;
 }
@@ -879,6 +883,9 @@ footer .end_menu p {
   footer .middle_menu ul li {
     margin-bottom: 0;
     line-height: 1.8em;
+  }
+  footer .end_menu button:hover {
+    opacity: 0.9;
   }
 }
 

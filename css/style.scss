@@ -52,8 +52,10 @@ button {
     text-align: center;
     color: white;
     background: linear-gradient(to left, rgba(48, 211, 92), rgba(42, 182, 217));
+    &:hover {
+        opacity: 0.6;
+    }
 }
-
 .articles .article_wrapper img {
     width: 80%;
 }
@@ -786,8 +788,6 @@ footer {
         }
     }
 
-    @media (min-width:768px) {}
-
     @media (min-width:1024px) {
         grid-template-columns: auto 420px auto;
         grid-template-rows: none;
@@ -814,6 +814,14 @@ footer {
             ul li {
                 margin-bottom: 0;
                 line-height: 1.8em;
+            }
+        }
+
+        .end_menu {
+            button {
+                &:hover {
+                    opacity: 0.9;
+                }
             }
         }
     }
