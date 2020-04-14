@@ -135,6 +135,7 @@ header .header_wrapper .menu_background .hamburger_menu ul {
 }
 
 header .header_wrapper .hamburger_icon {
+  cursor: pointer;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: menu;

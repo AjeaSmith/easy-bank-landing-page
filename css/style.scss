@@ -109,6 +109,7 @@ header {
         }
 
         .hamburger_icon {
+            cursor: pointer;
             grid-area: menu;
             justify-self: flex-end;
         }
@@ -668,7 +669,6 @@ header {
         }
     }
 }
-
 footer {
     background: $DarkB;
     display: grid;
