@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Public+Sans:300,400&display=swap');
 
 $DarkB: #2d314d;
-$LimeG: #30d35c;
-$BrightCy: #2ab6d9;
+$LimeG: rgb(48, 211, 92);
+$BrightCy: rgb(42, 182, 217);
 $GrayB: #9698a5;
 $LGB: #f3f4f6;
 $LightGray: #f9f9f9;
@@ -51,7 +51,7 @@ button {
     border-radius: 33px;
     text-align: center;
     color: white;
-    background: linear-gradient(to left, $BrightCy, $LimeG);
+    background: linear-gradient(to left, rgba(48, 211, 92), rgba(42, 182, 217));
 }
 
 .articles .article_wrapper img {
@@ -191,6 +191,10 @@ header {
                 grid-area: CTA;
                 display: block;
                 justify-self: flex-end;
+
+                &:hover {
+                    background: linear-gradient(to left, rgba(48, 211, 92, 0.5), rgba(42, 182, 217, 0.5));
+                }
             }
         }
 

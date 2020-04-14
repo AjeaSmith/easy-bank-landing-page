@@ -51,8 +51,8 @@ button {
   border-radius: 33px;
   text-align: center;
   color: white;
-  background: -webkit-gradient(linear, right top, left top, from(#2ab6d9), to(#30d35c));
-  background: linear-gradient(to left, #2ab6d9, #30d35c);
+  background: -webkit-gradient(linear, right top, left top, from(rgba(48, 211, 92, 0.5)), to(rgba(42, 182, 217, 0.5)));
+  background: linear-gradient(to left, rgba(48, 211, 92, 0.5), rgba(42, 182, 217, 0.5));
 }
 
 .articles .article_wrapper img {
