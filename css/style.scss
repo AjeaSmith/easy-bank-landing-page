@@ -51,7 +51,7 @@ button {
     border-radius: 33px;
     text-align: center;
     color: white;
-    background: linear-gradient(to left, rgba(48, 211, 92), rgba(42, 182, 217));
+    background: linear-gradient(to left, rgb(48, 211, 92), rgb(42, 182, 217));
     &:hover {
         opacity: 0.6;
     }
@@ -825,7 +825,6 @@ footer {
             }
         }
     }
-
     @media (min-width:1440px) {
         padding: 48px 164px;
     }

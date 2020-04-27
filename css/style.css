@@ -19,6 +19,7 @@ body {
   display: grid;
   -ms-grid-rows: (auto)[5];
       grid-template-rows: repeat(5, auto);
+  margin: 0;
 }
 
 @media (min-width: 1024px) {
@@ -51,8 +52,8 @@ button {
   border-radius: 33px;
   text-align: center;
   color: white;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(48, 211, 92, 0.5)), to(rgba(42, 182, 217, 0.5)));
-  background: linear-gradient(to left, rgba(48, 211, 92, 0.5), rgba(42, 182, 217, 0.5));
+  background: -webkit-gradient(linear, right top, left top, from(#30d35c), to(#2ab6d9));
+  background: linear-gradient(to left, #30d35c, #2ab6d9);
 }
 
 .gradient_btn:hover {
@@ -240,6 +241,10 @@ header .header_wrapper button {
     grid-area: CTA;
     display: block;
     justify-self: flex-end;
+  }
+  header .header_wrapper button:hover {
+    background: -webkit-gradient(linear, right top, left top, from(rgba(48, 211, 92, 0.5)), to(rgba(42, 182, 217, 0.5)));
+    background: linear-gradient(to left, rgba(48, 211, 92, 0.5), rgba(42, 182, 217, 0.5));
   }
 }
 
