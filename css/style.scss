@@ -25,7 +25,7 @@ body {
     font-size: 18px;
     display: grid;
     grid-template-rows: repeat(5, auto);
-
+    margin:0;
     @media (min-width: 1024px) {
         grid-template-rows: auto 387px 650px auto auto;
     }
